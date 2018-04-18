@@ -12,6 +12,6 @@ node("docker") {
     
         stage "publish"
         app.push 'master'
-        app.push "${commit_id}"
+        app.push "https://hub.docker.com/r/rockabhi58/demo_devops/"
     }
 }
